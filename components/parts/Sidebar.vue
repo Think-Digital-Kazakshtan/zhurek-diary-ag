@@ -2,7 +2,7 @@
 	<aside class="sidebar small-sidebar" :class="{'active' : openSidebar}">
 		<div class="sidebar__content sidebar__inner w-full">
 			<NuxtLink to="/" class="logo">
-				<img src="~/assets/img/icons/logo.png" alt="" />
+				<img src="~/assets/img/icons/logo.svg" alt="" />
 			</NuxtLink>
 			<div class="logo-mini">
 				<NuxtLink to="/"><img src="~/assets/img/icons/logo-mini.svg" alt="" /></NuxtLink>
