@@ -1,0 +1,29 @@
+<template>
+	<aside class="sidebar small-sidebar" :class="{'active' : openSidebar}">
+		<div class="sidebar__content sidebar__inner w-full">
+			<NuxtLink to="/" class="logo">
+				<img src="~/assets/img/icons/logo.png" alt="" />
+			</NuxtLink>
+			<div class="logo-mini">
+				<NuxtLink to="/"><img src="~/assets/img/icons/logo-mini.svg" alt="" /></NuxtLink>
+				<button @click.prevent="openSidebar = !openSidebar" class="btn-more" :class="{'active': openSidebar}" type="button">
+					<svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.458879 0.484254C0.165059 0.794415 0 1.21503 0 1.6536C0 2.09216 0.165059 2.51278 0.458879 2.82294L8.21692 11.01L0.458879 19.197C0.173386 19.509 0.0154122 19.9268 0.0189831 20.3604C0.022554 20.7941 0.187384 21.2089 0.47797 21.5156C0.768557 21.8222 1.16165 21.9962 1.57259 21.9999C1.98352 22.0037 2.37942 21.837 2.67501 21.5357L11.5411 12.1793C11.8349 11.8692 12 11.4486 12 11.01C12 10.5714 11.8349 10.1508 11.5411 9.84064L2.67501 0.484254C2.3811 0.174186 1.98253 0 1.56695 0C1.15136 0 0.752787 0.174186 0.458879 0.484254Z" fill="#4065AE" />
+					</svg>
+				</button>
+			</div>
+			<PartsNav />
+			<div class="bottom-line"></div>
+		</div>
+	</aside>
+</template>
+
+<script>
+export default {
+	data: () => ({
+		openSidebar: false
+	})
+}
+</script>
+
+<style></style>

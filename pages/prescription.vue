@@ -1,0 +1,253 @@
+<template>
+	<div>
+		<!-- HEAD -->
+		<section class="head personalArea-main">
+			<NuxtLink to="/" class="btn btn-back">
+				<span class="btn-content">
+					<div class="btn__circle">
+						<svg width="17" height="33" viewBox="0 0 17 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M0.35665 0.861542C0.469418 0.746939 0.603382 0.656013 0.750868 0.593974C0.898354 0.531934 1.05647 0.5 1.21615 0.5C1.37583 0.5 1.53394 0.531934 1.68142 0.593974C1.82891 0.656013 1.96287 0.746939 2.07564 0.861542L16.6434 15.629C16.7564 15.7434 16.8461 15.8792 16.9073 16.0287C16.9685 16.1782 17 16.3385 17 16.5003C17 16.6622 16.9685 16.8225 16.9073 16.972C16.8461 17.1215 16.7564 17.2573 16.6434 17.3716L2.07564 32.1391C1.84769 32.3702 1.53852 32.5 1.21615 32.5C0.893772 32.5 0.584603 32.3702 0.35665 32.1391C0.128698 31.908 0.000635598 31.5946 0.000635598 31.2678C0.000635598 30.941 0.128698 30.6276 0.35665 30.3965L14.0673 16.5003L0.35665 2.60411C0.243597 2.48979 0.153901 2.35399 0.0927012 2.20448C0.0315012 2.05497 0 1.89469 0 1.73282C0 1.57096 0.0315012 1.41068 0.0927012 1.26117C0.153901 1.11166 0.243597 0.975857 0.35665 0.861542Z" fill="white" />
+						</svg>
+					</div>
+					<span>Назад</span>
+				</span>
+			</NuxtLink>
+			<div class="head-main">
+				<div class="head-title">
+					<div class="head-title-icon">
+						<img src="~/assets/img/personalArea/icon5-red.png" alt="" />
+					</div>
+					<div class="head-title-content">
+						<h1>Назначения</h1>
+						<p>Просматривайте назначения врача, препараты и историю назначений</p>
+					</div>
+					<p class="mobile">Следите за своим давлением, добавляя в дневник свои результаты</p>
+				</div>
+				<button class="add-froze btn-add-prescriptions">
+					Добавить назначение
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.5 9C13.5 8.17157 14.1716 7.5 15 7.5C15.8284 7.5 16.5 8.17157 16.5 9V21C16.5 21.8284 15.8284 22.5 15 22.5C14.1716 22.5 13.5 21.8284 13.5 21V9Z" fill="#E0A4B6" />
+						<path d="M21 13.5C21.8284 13.5 22.5 14.1716 22.5 15C22.5 15.8284 21.8284 16.5 21 16.5L9 16.5C8.17157 16.5 7.5 15.8284 7.5 15C7.5 14.1716 8.17157 13.5 9 13.5L21 13.5Z" fill="#E0A4B6" />
+						<rect x="0.5" y="0.5" width="29" height="29" rx="14.5" stroke="#E0A4B6" />
+					</svg>
+				</button>
+			</div>
+		</section>
+		<!-- END HEAD -->
+		<!-- MAIN  -->
+		<section class="prescriptions col-main diary-main">
+			<div class="details">
+				<div class="details-item">
+					<div class="details-item-main">
+						<span class="text__xs">12.06.2022, 15:33</span>
+						<div class="col-item">
+							<p class="subtitle">Заболевание</p>
+							<h3 class="title">Кардиология</h3>
+						</div>
+						<div class="col-item">
+							<p class="subtitle">Лечащий врач</p>
+							<h3 class="title">Мухамедов Юсуп Мажитович</h3>
+						</div>
+						<div class="col-item">
+							<p class="subtitle">Дата приема</p>
+							<h3 class="title">12.06.2022, 15:33</h3>
+						</div>
+						<div class="btn-square-group">
+							<a href="#presc-modal-1" class="btn-square-blue open-presc-modal">Посмотреть</a>
+							<button class="btn-square-transparent open-share-modal">
+								Поделиться
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.0625 5.4375L12 1.5L15.9375 5.4375" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M12 12V1.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M16.5 9H18.75C18.9489 9 19.1397 9.07902 19.2803 9.21967C19.421 9.36032 19.5 9.55109 19.5 9.75V19.5C19.5 19.6989 19.421 19.8897 19.2803 20.0303C19.1397 20.171 18.9489 20.25 18.75 20.25H5.25C5.05109 20.25 4.86032 20.171 4.71967 20.0303C4.57902 19.8897 4.5 19.6989 4.5 19.5V9.75C4.5 9.55109 4.57902 9.36032 4.71967 9.21967C4.86032 9.07902 5.05109 9 5.25 9H7.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="details-item">
+					<div class="details-item-main">
+						<span class="text__xs">12.06.2022, 15:33</span>
+						<div class="col-item">
+							<p class="subtitle">Заболевание</p>
+							<h3 class="title">Кардиология</h3>
+						</div>
+						<div class="col-item">
+							<p class="subtitle">Лечащий врач</p>
+							<h3 class="title">Мухамедов Юсуп Мажитович</h3>
+						</div>
+						<div class="col-item">
+							<p class="subtitle">Дата приема</p>
+							<h3 class="title">12.06.2022, 15:33</h3>
+						</div>
+						<div class="btn-square-group">
+							<a href="#presc-modal-2" class="btn-square-blue open-presc-modal">Посмотреть</a>
+							<button class="btn-square-transparent open-share-modal">
+								Поделиться
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.0625 5.4375L12 1.5L15.9375 5.4375" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M12 12V1.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M16.5 9H18.75C18.9489 9 19.1397 9.07902 19.2803 9.21967C19.421 9.36032 19.5 9.55109 19.5 9.75V19.5C19.5 19.6989 19.421 19.8897 19.2803 20.0303C19.1397 20.171 18.9489 20.25 18.75 20.25H5.25C5.05109 20.25 4.86032 20.171 4.71967 20.0303C4.57902 19.8897 4.5 19.6989 4.5 19.5V9.75C4.5 9.55109 4.57902 9.36032 4.71967 9.21967C4.86032 9.07902 5.05109 9 5.25 9H7.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="details-item">
+					<div class="details-item-main">
+						<span class="text__xs">12.06.2022, 15:33</span>
+						<div class="col-item">
+							<p class="subtitle">Заболевание</p>
+							<h3 class="title">Кардиология</h3>
+						</div>
+						<div class="col-item">
+							<p class="subtitle">Лечащий врач</p>
+							<h3 class="title">Мухамедов Юсуп Мажитович</h3>
+						</div>
+						<div class="col-item">
+							<p class="subtitle">Дата приема</p>
+							<h3 class="title">12.06.2022, 15:33</h3>
+						</div>
+						<div class="btn-square-group">
+							<a href="#presc-modal-3" class="btn-square-blue open-presc-modal">Посмотреть</a>
+							<button class="btn-square-transparent open-share-modal">
+								Поделиться
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.0625 5.4375L12 1.5L15.9375 5.4375" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M12 12V1.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M16.5 9H18.75C18.9489 9 19.1397 9.07902 19.2803 9.21967C19.421 9.36032 19.5 9.55109 19.5 9.75V19.5C19.5 19.6989 19.421 19.8897 19.2803 20.0303C19.1397 20.171 18.9489 20.25 18.75 20.25H5.25C5.05109 20.25 4.86032 20.171 4.71967 20.0303C4.57902 19.8897 4.5 19.6989 4.5 19.5V9.75C4.5 9.55109 4.57902 9.36032 4.71967 9.21967C4.86032 9.07902 5.05109 9 5.25 9H7.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="details-item">
+					<div class="details-item-main">
+						<span class="text__xs">12.06.2022, 15:33</span>
+						<div class="col-item">
+							<p class="subtitle">Заболевание</p>
+							<h3 class="title">Кардиология</h3>
+						</div>
+						<div class="col-item">
+							<p class="subtitle">Лечащий врач</p>
+							<h3 class="title">Мухамедов Юсуп Мажитович</h3>
+						</div>
+						<div class="col-item">
+							<p class="subtitle">Дата приема</p>
+							<h3 class="title">12.06.2022, 15:33</h3>
+						</div>
+						<div class="btn-square-group">
+							<a href="#presc-modal-4" class="btn-square-blue open-presc-modal">Посмотреть</a>
+							<button class="btn-square-transparent open-share-modal">
+								Поделиться
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.0625 5.4375L12 1.5L15.9375 5.4375" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M12 12V1.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M16.5 9H18.75C18.9489 9 19.1397 9.07902 19.2803 9.21967C19.421 9.36032 19.5 9.55109 19.5 9.75V19.5C19.5 19.6989 19.421 19.8897 19.2803 20.0303C19.1397 20.171 18.9489 20.25 18.75 20.25H5.25C5.05109 20.25 4.86032 20.171 4.71967 20.0303C4.57902 19.8897 4.5 19.6989 4.5 19.5V9.75C4.5 9.55109 4.57902 9.36032 4.71967 9.21967C4.86032 9.07902 5.05109 9 5.25 9H7.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="show-more">
+				<div class="show-more-btn">
+					<button class="btn-showMore btn-square-blue" type="button">Показать еще</button>
+				</div>
+				<div class="hidden-details hidden">
+					<div class="details-item">
+						<div class="details-item-main">
+							<span class="text__xs">12.06.2022, 15:33</span>
+							<div class="col-item">
+								<p class="subtitle">Заболевание</p>
+								<h3 class="title">Кардиология</h3>
+							</div>
+							<div class="col-item">
+								<p class="subtitle">Лечащий врач</p>
+								<h3 class="title">Мухамедов Юсуп Мажитович</h3>
+							</div>
+							<div class="col-item">
+								<p class="subtitle">Дата приема</p>
+								<h3 class="title">12.06.2022, 15:33</h3>
+							</div>
+							<div class="btn-square-group">
+								<a href="#presc-modal-5" class="btn-square-blue open-presc-modal">Посмотреть</a>
+								<button class="btn-square-transparent open-share-modal">
+									Поделиться
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.0625 5.4375L12 1.5L15.9375 5.4375" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M12 12V1.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M16.5 9H18.75C18.9489 9 19.1397 9.07902 19.2803 9.21967C19.421 9.36032 19.5 9.55109 19.5 9.75V19.5C19.5 19.6989 19.421 19.8897 19.2803 20.0303C19.1397 20.171 18.9489 20.25 18.75 20.25H5.25C5.05109 20.25 4.86032 20.171 4.71967 20.0303C4.57902 19.8897 4.5 19.6989 4.5 19.5V9.75C4.5 9.55109 4.57902 9.36032 4.71967 9.21967C4.86032 9.07902 5.05109 9 5.25 9H7.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="details-item">
+						<div class="details-item-main">
+							<span class="text__xs">12.06.2022, 15:33</span>
+							<div class="col-item">
+								<p class="subtitle">Заболевание</p>
+								<h3 class="title">Кардиология</h3>
+							</div>
+							<div class="col-item">
+								<p class="subtitle">Лечащий врач</p>
+								<h3 class="title">Мухамедов Юсуп Мажитович</h3>
+							</div>
+							<div class="col-item">
+								<p class="subtitle">Дата приема</p>
+								<h3 class="title">12.06.2022, 15:33</h3>
+							</div>
+							<div class="btn-square-group">
+								<a href="#presc-modal-6" class="btn-square-blue open-presc-modal">Посмотреть</a>
+								<button class="btn-square-transparent open-share-modal">
+									Поделиться
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.0625 5.4375L12 1.5L15.9375 5.4375" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M12 12V1.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M16.5 9H18.75C18.9489 9 19.1397 9.07902 19.2803 9.21967C19.421 9.36032 19.5 9.55109 19.5 9.75V19.5C19.5 19.6989 19.421 19.8897 19.2803 20.0303C19.1397 20.171 18.9489 20.25 18.75 20.25H5.25C5.05109 20.25 4.86032 20.171 4.71967 20.0303C4.57902 19.8897 4.5 19.6989 4.5 19.5V9.75C4.5 9.55109 4.57902 9.36032 4.71967 9.21967C4.86032 9.07902 5.05109 9 5.25 9H7.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="details-item">
+						<div class="details-item-main">
+							<span class="text__xs">12.06.2022, 15:33</span>
+							<div class="col-item">
+								<p class="subtitle">Заболевание</p>
+								<h3 class="title">Кардиология</h3>
+							</div>
+							<div class="col-item">
+								<p class="subtitle">Лечащий врач</p>
+								<h3 class="title">Мухамедов Юсуп Мажитович</h3>
+							</div>
+							<div class="col-item">
+								<p class="subtitle">Дата приема</p>
+								<h3 class="title">12.06.2022, 15:33</h3>
+							</div>
+							<div class="btn-square-group">
+								<a href="#presc-modal-7" class="btn-square-blue open-presc-modal">Посмотреть</a>
+								<button class="btn-square-transparent open-share-modal">
+									Поделиться
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.0625 5.4375L12 1.5L15.9375 5.4375" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M12 12V1.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M16.5 9H18.75C18.9489 9 19.1397 9.07902 19.2803 9.21967C19.421 9.36032 19.5 9.55109 19.5 9.75V19.5C19.5 19.6989 19.421 19.8897 19.2803 20.0303C19.1397 20.171 18.9489 20.25 18.75 20.25H5.25C5.05109 20.25 4.86032 20.171 4.71967 20.0303C4.57902 19.8897 4.5 19.6989 4.5 19.5V9.75C4.5 9.55109 4.57902 9.36032 4.71967 9.21967C4.86032 9.07902 5.05109 9 5.25 9H7.5" stroke="#4065AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END MAIN  -->
+	</div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style></style>

@@ -1,0 +1,16 @@
+@keyframes zoom-in {
+  to {
+    @apply scale-100 opacity-100;
+  }
+}
+// @keyframes bounce-1 {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(-100px);
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
