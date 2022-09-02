@@ -1,9 +1,10 @@
 <template>
 	<div class="authorization-page">
+
 		<section>
 			<div class="content vertical-distance">
 				<div class="">
-					<div class="tabs z-20 w-full shadow 2xl:w-[70%] mb-20 bg-white">
+					<div class="tabs z-20 mb-20 w-full bg-white shadow 2xl:w-[70%]">
 						<div class="tabs__nav w-full">
 							<ul class="w-full">
 								<li class="rounded bg-white sm:rounded-tr-xl">
@@ -14,12 +15,12 @@
 								</li>
 							</ul>
 						</div>
-						<TransitionGroup class="tabs__wrapper w-full" tag="div" name="fade" mode="out-in" appear>
+						<TransitionGroup class="tabs__wrapper w-full" tag="div" name="fade" mode="out-in">
 							<div v-if="tab == 1" class="tabs__wrapper__item tab-9" key="auth">
-								<PartsAuthLogin />
+								<PartsAuthLogin @registration="tab = 2" />
 							</div>
 							<div v-if="tab == 2" class="tabs__wrapper__item tab-8" key="register">
-								<PartsAuthRegister />
+								<PartsAuthRegister @login="tab = 1" />
 							</div>
 						</TransitionGroup>
 					</div>
@@ -31,6 +32,8 @@
 
 <script>
 export default {
+	layout: 'auth',
+	auth: 'guest',
 	data: () => ({
 		tab: 1
 	})

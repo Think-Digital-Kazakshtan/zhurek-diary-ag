@@ -50,3 +50,12 @@
 	transform: translateX(-20px);
 	opacity: 0;
 }
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s ease-out
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}

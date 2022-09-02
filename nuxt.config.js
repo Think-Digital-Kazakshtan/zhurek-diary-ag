@@ -19,6 +19,7 @@ export default {
 	components: true,
 
 	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+
 	buildModules: [
 		// https://go.nuxtjs.dev/tailwindcss
 		// '@nuxtjs/tailwindcss',
@@ -26,40 +27,104 @@ export default {
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
-	modules: [
-		// https://go.nuxtjs.dev/axios
-		'@nuxtjs/axios',
-		// https://go.nuxtjs.dev/pwa
-		'@nuxtjs/pwa'
-	],
+	modules: ['@nuxtjs/axios', '@nuxtjs/auth-next', '@nuxtjs/pwa', '@nuxtjs/toast'],
 
 	// Axios module configuration: https://go.nuxtjs.dev/config-axios
 	axios: {
 		// Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-		baseURL: '/'
+		host: process.env.API_HOST,
+		prefix: process.env.API_PREFIX,
+		browserBaseURL: process.env.API_URL,
+		proxy: true,
+		credentials: true,
+		debug: true
+	},
+
+	router: {
+		base: '/',
+		middleware: ['auth']
+	},
+
+	proxy: {
+		'/api': {
+			target: process.env.API_URL,
+			pathRewrite: { '^/api': '/' }
+		}
+	},
+
+	auth: {
+		redirect: {
+			login: '/auth',
+			logout: '/auth',
+			callback: false,
+			home: '/'
+		},
+		watchLoggedIn: true,
+		rewriteRedirects: true,
+		resetOnError: true,
+		strategies: {
+			local: {
+				token: {
+					property: 'token',
+					global: true,
+					type: 'Bearer'
+				},
+				user: {
+					property: 'user',
+					autoFetch: true
+				},
+				endpoints: {
+					login: { url: process.env.API_URL + '/auth/login', method: 'post' },
+					user: { url: process.env.API_URL + '/auth/user', method: 'get' },
+					logout: { url: process.env.API_URL + '/auth/logout', method: 'delete' }
+				}
+				// autoLogout: false
+			}
+		}
 	},
 
 	// PWA module configuration: https://go.nuxtjs.dev/pwa
 	pwa: {
-    icon: {
-      fileName: 'icon.png',
-      sizes: [64, 120, 144, 152, 192, 384, 512],
-    },
-    meta: {
-      title: 'Zhurek App',
-      author: 'Santo',
-      charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
-      mobileAppIOS:true,
-      mobileApp: true,
-      nativeUI: true
-    },
+		icon: {
+			fileName: 'icon.png',
+			sizes: [64, 120, 144, 152, 192, 384, 512]
+		},
+		meta: {
+			title: 'Zhurek App',
+			author: 'Santo',
+			charset: 'utf-8',
+			viewport: 'width=device-width, initial-scale=1',
+			mobileAppIOS: true,
+			mobileApp: true,
+			nativeUI: true
+		},
 		manifest: {
-      name: 'Zhurek App',
-      short_name: "Zhurek App",
-      description: 'Дневник АГ',
+			name: 'Zhurek App',
+			short_name: 'Zhurek App',
+			description: 'Дневник АГ',
 			lang: 'ru'
 		}
+	},
+	layoutTransition: {
+		name: 'fade',
+		mode: 'out-in'
+	},
+	pageTransition: {
+		name: 'fade',
+		mode: 'out-in'
+	},
+	loading: {
+		color: 'purple',
+		height: '5px'
+	},
+	loadingIndicator: {
+		name: 'circle',
+		color: 'purple',
+		background: 'white'
+	},
+	toast: {
+    position: "top-right",
+    duration : 5000
 	},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build

@@ -833,8 +833,7 @@ input {
 
 					&__right {
 						@apply mt-5 w-full md:ml-5 md:mt-0 md:w-1/2;
-						& form {
-							@apply mt-4 space-y-10;
+						&__inputs {
 							.authorization-radio {
 								@apply flex;
 								&__specialist {
@@ -1429,7 +1428,7 @@ input {
 		@apply w-full sm:z-[1] z-auto overflow-y-hidden;
 	}
 	.navbar-container {
-		@apply sm:relative sm:pt-0 w-full;
+		@apply sm:relative w-full;
 	}
 }
 
@@ -1919,7 +1918,6 @@ input[type='time']::-webkit-calendar-picker-indicator {
 	@apply bg-none;
 }
 input {
-	@apply text-lg;
 	&:focus {
 		@apply border-primary;
 	}
@@ -2970,7 +2968,7 @@ input {
 
 // TOOLS MODAL
 .tools-modal {
-	@apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-60 flex justify-center items-center z-[99] opacity-0 invisible transition-all duration-300 ease-linear;
+	@apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-60 flex justify-center items-center opacity-0 z-[999] invisible transition-all duration-300 ease-linear;
 	&.show {
 		@apply opacity-100 visible transition-all duration-300 ease-linear;
 	}

@@ -39,7 +39,7 @@ export default {}
 
 <style lang="scss">
 .navbar {
-	@apply fixed bottom-0 left-0 z-50 flex w-full items-center justify-between bg-white;
+	@apply fixed bottom-0 left-0 z-50 flex xl:hidden w-full items-center justify-between bg-white;
 	&__item {
 		@apply flex flex-1 items-center justify-center border-r border-darkWhiteBg  text-center text-selectedText transition-all  duration-300  hover:bg-bgGradient2 hover:text-white;
 		a {

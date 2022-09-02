@@ -1,193 +1,192 @@
-
 //BUTTON START
 .btn {
-  @apply relative flex items-center justify-between rounded-full;
-  &:after {
-    content: "";
-    @apply absolute top-1/2 left-1/2 z-10 h-[110%] w-[103%] -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-gradient-to-r from-secondary to-primary;
-  }
+	@apply relative flex items-center justify-between rounded-full;
+	&:after {
+		content: '';
+		@apply absolute top-1/2 left-1/2 z-10 h-[110%] w-[103%] -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-gradient-to-r from-secondary to-primary;
+	}
 
-  // align-items: center;
-  // font-size: 1rem;
-  // box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
-  // border: solid 2px transparent;
-  // background-image: linear-gradient(
-  //     rgba(255, 255, 255, 0),
-  //     rgba(255, 255, 255, 0)
-  //   ),
-  //   linear-gradient(101deg, #e71e5a, #4065ae);
-  // background-origin: border-box;
-  // background-clip: content-box, border-box;
-  // box-shadow: 2px 1000px 1px #fff inset;
-  &-content {
-    @apply relative z-30 flex items-center justify-between rounded-full bg-white transition-all duration-300 ease-in-out;
-    background-size: 0% 100%;
-    background-image: linear-gradient(to right, #e71e5a, #4065ae);
-    background-repeat: no-repeat;
-    transition: all 0.4s linear;
-    & span {
-      @apply px-7;
-    }
-    &:hover {
-      @apply text-white;
-      background-size: 100% 100%;
-      transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
-    }
-  }
+	// align-items: center;
+	// font-size: 1rem;
+	// box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+	// border: solid 2px transparent;
+	// background-image: linear-gradient(
+	//     rgba(255, 255, 255, 0),
+	//     rgba(255, 255, 255, 0)
+	//   ),
+	//   linear-gradient(101deg, #e71e5a, #4065ae);
+	// background-origin: border-box;
+	// background-clip: content-box, border-box;
+	// box-shadow: 2px 1000px 1px #fff inset;
+	&-content {
+		@apply relative z-30 flex items-center justify-between rounded-full bg-white transition-all duration-300 ease-in-out;
+		background-size: 0% 100%;
+		background-image: linear-gradient(to right, #e71e5a, #4065ae);
+		background-repeat: no-repeat;
+		transition: all 0.4s linear;
+		& span {
+			@apply px-7;
+		}
+		&:hover {
+			@apply text-white;
+			background-size: 100% 100%;
+			transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
+		}
+	}
 
-  &__circle {
-    @apply flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-secondary to-primary text-lg text-white;
-    & svg {
-      & path {
-        fill: #4065ae;
-      }
-    }
-  }
-  &-search {
-    @apply flex rounded-full border border-third;
-    &__circle {
-      @apply flex items-center justify-center rounded-full bg-gradient-to-r from-secondary to-primary p-3 sm:p-4;
-      & svg {
-        fill: white;
-      }
-      & .bi {
-        @apply text-white;
-      }
-    }
-  }
-  &-entrance {
-    @apply relative flex items-center justify-between rounded-full;
-    &:after {
-      content: "";
-      @apply absolute top-1/2 left-1/2 z-10 h-[110%] w-[103%] -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-gradient-to-r from-secondary to-primary;
-    }
-    &-content {
-      @apply relative z-30 flex items-center justify-between rounded-full bg-white transition-all duration-300 ease-in-out;
-      background-size: 0% 100%;
-      background-image: linear-gradient(to right, #e71e5a, #4065ae);
-      background-repeat: no-repeat;
-      transition: all 0.4s linear;
-      & span {
-        @apply px-4;
-      }
-      &:hover {
-        @apply text-white;
-        background-size: 100% 100%;
-        transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
-      }
-    }
-    // &:before {
-    //   content: "";
-    //   position: absolute;
-    //   top: -2px;
-    //   bottom: -2px;
-    //   left: -2px;
-    //   right: -2px;
-    //   background: linear-gradient(35deg, #4065ae, #e71e5a);
-    //   border-radius: 34px;
-    //   z-index: -1;
-    // }
+	&__circle {
+		@apply flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-secondary to-primary text-lg text-white;
+		& svg {
+			& path {
+				fill: #4065ae;
+			}
+		}
+	}
+	&-search {
+		@apply flex rounded-full border border-third;
+		&__circle {
+			@apply flex items-center justify-center rounded-full bg-gradient-to-r from-secondary to-primary p-3 sm:p-4;
+			& svg {
+				fill: white;
+			}
+			& .bi {
+				@apply text-white;
+			}
+		}
+	}
+	&-entrance {
+		@apply relative flex items-center justify-between rounded-full;
+		&:after {
+			content: '';
+			@apply absolute top-1/2 left-1/2 z-10 h-[110%] w-[103%] -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-gradient-to-r from-secondary to-primary;
+		}
+		&-content {
+			@apply relative z-30 flex items-center justify-between rounded-full bg-white transition-all duration-300 ease-in-out;
+			background-size: 0% 100%;
+			background-image: linear-gradient(to right, #e71e5a, #4065ae);
+			background-repeat: no-repeat;
+			transition: all 0.4s linear;
+			& span {
+				@apply px-4;
+			}
+			&:hover {
+				@apply text-white;
+				background-size: 100% 100%;
+				transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
+			}
+		}
+		// &:before {
+		//   content: "";
+		//   position: absolute;
+		//   top: -2px;
+		//   bottom: -2px;
+		//   left: -2px;
+		//   right: -2px;
+		//   background: linear-gradient(35deg, #4065ae, #e71e5a);
+		//   border-radius: 34px;
+		//   z-index: -1;
+		// }
 
-    &__circle {
-      @apply flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary w-10 h-10;
-    }
-  }
-  &-language {
-    @apply h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-secondary to-primary text-white;
-  }
-  &-light {
-    @apply flex items-center justify-between rounded-full;
-    border: 1px solid white !important;
-    & span {
-      @apply py-1 px-5;
-    }
-    &__circle {
-      @apply flex h-14 w-14 items-center justify-center rounded-full bg-white text-lg text-primary;
-      & svg {
-        & path {
-          fill: #4065ae;
-        }
-      }
-    }
-    &__circle__email {
-      @apply flex items-center justify-center rounded-full bg-white p-4 text-lg text-primary;
-      & svg {
-        & path {
-          fill: #4065ae;
-        }
-      }
-    }
-  }
+		&__circle {
+			@apply flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary;
+		}
+	}
+	&-language {
+		@apply h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-secondary to-primary text-white;
+	}
+	&-light {
+		@apply flex items-center justify-between rounded-full;
+		border: 1px solid white !important;
+		& span {
+			@apply py-1 px-5;
+		}
+		&__circle {
+			@apply flex h-14 w-14 items-center justify-center rounded-full bg-white text-lg text-primary;
+			& svg {
+				& path {
+					fill: #4065ae;
+				}
+			}
+		}
+		&__circle__email {
+			@apply flex items-center justify-center rounded-full bg-white p-4 text-lg text-primary;
+			& svg {
+				& path {
+					fill: #4065ae;
+				}
+			}
+		}
+	}
 
-  &__more {
-    @apply flex items-center justify-between text-sm font-medium uppercase;
-    .bi {
-      @apply transition-all duration-300 ease-in-out;
-    }
-    &:hover {
-      & .bi {
-        transform: translateX(10px);
-      }
-    }
-  }
-  &-blue-link {
-    @apply mt-5 text-sm font-medium uppercase text-primary 2xl:mt-0;
-  }
-  &-show-more {
-    @apply rounded-full bg-primary px-5 py-2 uppercase text-white transition-all duration-300 ease-in-out;
-    border: 2px solid #4065ae !important;
-    &:hover {
-      @apply bg-white text-black;
-    }
-  }
-  &__rubric {
-    @apply relative flex items-center justify-center rounded-full;
+	&__more {
+		@apply flex items-center justify-between text-sm font-medium uppercase;
+		.bi {
+			@apply transition-all duration-300 ease-in-out;
+		}
+		&:hover {
+			& .bi {
+				transform: translateX(10px);
+			}
+		}
+	}
+	&-blue-link {
+		@apply mt-5 text-sm font-medium uppercase text-primary 2xl:mt-0;
+	}
+	&-show-more {
+		@apply rounded-full bg-primary px-5 py-2 uppercase text-white transition-all duration-300 ease-in-out;
+		border: 2px solid #4065ae !important;
+		&:hover {
+			@apply bg-white text-black;
+		}
+	}
+	&__rubric {
+		@apply relative flex items-center justify-center rounded-full;
 
-    &__active {
-      @apply border-[2px] border-transparent bg-primary px-5 py-2 text-white;
-    }
-    &:after {
-      content: "";
-      @apply absolute top-1/2 left-1/2 z-10 h-[110%] -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-gradient-to-r from-secondary to-primary;
-    }
-    &__content {
-      @apply relative z-30 flex items-center justify-between rounded-full bg-white transition-all duration-300 ease-in-out;
-      background-size: 0% 100%;
-      background-image: linear-gradient(to right, #e71e5a, #4065ae);
-      background-repeat: no-repeat;
-      transition: all 0.4s linear;
-      & span {
-        @apply px-5 py-2;
-      }
-      &:hover {
-        @apply text-white;
-        background-size: 100% 100%;
-        transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
-      }
-    }
-  }
-  &-ordinary {
-    @apply rounded-lg px-5 py-1 text-dark transition-all duration-300 ease-in-out;
-    border: 1px solid #5b6373 !important;
-    & span {
-      @apply px-5 py-2;
-    }
-    &:hover {
-      @apply border border-primary bg-primary text-white;
-    }
-  }
-  &-close-bi {
-    @apply absolute  flex items-center text-sm uppercase text-primary;
-    & .bi {
-      @apply mr-2 transition-all duration-300 ease-in-out;
-    }
-    &:hover {
-      & .bi {
-        transform: translateX(-5px);
-      }
-    }
-  }
-  //<i class="bi bi-chevron-right"></i>
+		&__active {
+			@apply border-[2px] border-transparent bg-primary px-5 py-2 text-white;
+		}
+		&:after {
+			content: '';
+			@apply absolute top-1/2 left-1/2 z-10 h-[110%] -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-gradient-to-r from-secondary to-primary;
+		}
+		&__content {
+			@apply relative z-30 flex items-center justify-between rounded-full bg-white transition-all duration-300 ease-in-out;
+			background-size: 0% 100%;
+			background-image: linear-gradient(to right, #e71e5a, #4065ae);
+			background-repeat: no-repeat;
+			transition: all 0.4s linear;
+			& span {
+				@apply px-5 py-2;
+			}
+			&:hover {
+				@apply text-white;
+				background-size: 100% 100%;
+				transition: all 0.4s cubic-bezier(0, 0, 0.23, 1);
+			}
+		}
+	}
+	&-ordinary {
+		@apply rounded-lg px-5 py-1 text-dark transition-all duration-300 ease-in-out;
+		border: 1px solid #5b6373 !important;
+		& span {
+			@apply px-5 py-2;
+		}
+		&:hover {
+			@apply border border-primary bg-primary text-white;
+		}
+	}
+	&-close-bi {
+		@apply absolute  flex items-center text-sm uppercase text-primary;
+		& .bi {
+			@apply mr-2 transition-all duration-300 ease-in-out;
+		}
+		&:hover {
+			& .bi {
+				transform: translateX(-5px);
+			}
+		}
+	}
+	//<i class="bi bi-chevron-right"></i>
 }
 // .btn-show-more {
 // }
@@ -195,149 +194,149 @@
 
 //DISTANCE START
 .vertical-distance {
-  @apply mt-16 sm:mt-20;
+	@apply mt-16 sm:mt-20;
 }
 .content-distance {
-  @apply mt-7;
+	@apply mt-7;
 }
 //DISTANCE END
 
 //GRADIENT START
 .gradient-border-btn {
-  @apply relative z-10;
-  &:after {
-    content: "";
-    @apply absolute left-0 top-0 h-[105%] w-[105%] bg-gradient-to-r from-secondary to-primary;
-  }
+	@apply relative z-10;
+	&:after {
+		content: '';
+		@apply absolute left-0 top-0 h-[105%] w-[105%] bg-gradient-to-r from-secondary to-primary;
+	}
 }
 .gradient-border {
-  @apply relative flex items-center;
-  // &:after {
-  //   content: "";
-  //   @apply bg-gradient-to-r from-secondary to-primary;
-  // }
-  align-items: center;
-  font-size: 1rem;
-  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
-  border: solid 2px transparent;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0)
-    ),
-    linear-gradient(101deg, #e71e5a, #4065ae);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  box-shadow: 2px 1000px 1px rgb(255, 255, 255) inset;
-  // position: relative;
+	@apply relative flex items-center;
+	// &:after {
+	//   content: "";
+	//   @apply bg-gradient-to-r from-secondary to-primary;
+	// }
+	align-items: center;
+	font-size: 1rem;
+	box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+	border: solid 2px transparent;
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #e71e5a, #4065ae);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	box-shadow: 2px 1000px 1px rgb(255, 255, 255) inset;
+	// position: relative;
 
-  // /* just to show box-shadow still works fine */
-  // &:before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   background: linear-gradient(45deg, #e71e5a, #4065ae);
-  //   -webkit-mask: linear-gradient(#fff 0 0) content-box,
-  //     linear-gradient(#fff 0 0);
-  //   -webkit-mask-composite: xor;
-  //   mask-composite: exclude;
-  // }
+	// /* just to show box-shadow still works fine */
+	// &:before {
+	//   content: "";
+	//   position: absolute;
+	//   top: 0;
+	//   left: 0;
+	//   right: 0;
+	//   bottom: 0;
+	//   background: linear-gradient(45deg, #e71e5a, #4065ae);
+	//   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+	//     linear-gradient(#fff 0 0);
+	//   -webkit-mask-composite: xor;
+	//   mask-composite: exclude;
+	// }
 }
 .gradient-text {
-  background: linear-gradient(45deg, #e71e5a, #4065ae);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	background: linear-gradient(45deg, #e71e5a, #4065ae);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 //GRADIENT END
 
 //UNDER BACKGROUND START
 .under-blue {
-  @apply relative z-10;
-  &:after {
-    content: "";
-    @apply absolute left-0 top-1/2 h-[90%] w-full  -translate-y-1/2 transform rounded-l-xl bg-blue;
-  }
+	@apply relative z-10;
+	&:after {
+		content: '';
+		@apply absolute left-0 top-1/2 h-[90%] w-full  -translate-y-1/2 transform rounded-l-xl bg-blue;
+	}
 }
 .under-pink {
-  @apply relative z-10;
-  &:after {
-    content: "";
-    @apply absolute left-5 -bottom-10 h-[90%] w-[95%] rounded-xl bg-pink;
-  }
+	@apply relative z-10;
+	&:after {
+		content: '';
+		@apply absolute left-5 -bottom-10 h-[90%] w-[95%] rounded-xl bg-pink;
+	}
 }
 .under-blue-hero {
-  @apply relative z-10;
-  &:after {
-    content: "";
-    @apply absolute -left-20 top-[65%] h-[90%] w-[140%] -translate-y-1/2 transform rounded-l-xl bg-blue lg:-left-10;
-  }
+	@apply relative z-10;
+	&:after {
+		content: '';
+		@apply absolute -left-20 top-[65%] h-[90%] w-[140%] -translate-y-1/2 transform rounded-l-xl bg-blue lg:-left-10;
+	}
 }
 .under-pink-school {
-  @apply relative z-10;
-  &:after {
-    content: "";
-    @apply absolute bottom-14 -left-10 h-full w-[130%] rounded-xl bg-pink lg:w-[110%];
-  }
+	@apply relative z-10;
+	&:after {
+		content: '';
+		@apply absolute bottom-14 -left-10 h-full w-[130%] rounded-xl bg-pink lg:w-[110%];
+	}
 }
 //UNDER BACKGROUND END
 
 //BUTTONS SWIPER START
 .swiper-button-next {
-  right: 20px !important;
-  &:after {
-    content: "";
-    @apply hidden items-center justify-center rounded-full bg-black bg-opacity-50 px-5 py-4 text-white shadow-md transition-all duration-300 ease-in-out lg:flex;
-    font-size: 20px !important;
-  }
-  &:hover {
-    &:after {
-      @apply bg-white bg-opacity-100 text-black;
-    }
-  }
+	right: 20px !important;
+	&:after {
+		content: '';
+		@apply hidden items-center justify-center rounded-full bg-black bg-opacity-50 px-5 py-4 text-white shadow-md transition-all duration-300 ease-in-out lg:flex;
+		font-size: 20px !important;
+	}
+	&:hover {
+		&:after {
+			@apply bg-white bg-opacity-100 text-black;
+		}
+	}
 }
 .swiper-button-prev {
-  left: 20px !important;
-  &:after {
-    content: "";
-    @apply hidden items-center justify-center rounded-full bg-black bg-opacity-50 px-5 py-4 text-white shadow-md transition-all duration-300 ease-in-out lg:flex;
-    font-size: 20px !important;
-  }
-  &:hover {
-    &:after {
-      @apply bg-white bg-opacity-100 text-black;
-    }
-  }
+	left: 20px !important;
+	&:after {
+		content: '';
+		@apply hidden items-center justify-center rounded-full bg-black bg-opacity-50 px-5 py-4 text-white shadow-md transition-all duration-300 ease-in-out lg:flex;
+		font-size: 20px !important;
+	}
+	&:hover {
+		&:after {
+			@apply bg-white bg-opacity-100 text-black;
+		}
+	}
 }
 //BUTTONS SWIPER END
 
 .butterfly {
-  @apply absolute;
+	@apply absolute;
 }
 .rubric {
-  @apply flex text-sm text-white;
-  &__one {
-    @apply flex items-center justify-center rounded-full bg-primary px-6 py-2;
-  }
-  &__two {
-    @apply flex items-center justify-center rounded-full bg-secondary px-6 py-2;
-  }
-  &__three {
-    @apply flex items-center justify-center rounded-full bg-purple px-6 py-2;
-  }
-  &__article {
-    @apply flex items-center justify-center rounded-full bg-secondary px-6 py-2;
-  }
+	@apply flex text-sm text-white;
+	&__one {
+		@apply flex items-center justify-center rounded-full bg-primary px-6 py-2;
+	}
+	&__two {
+		@apply flex items-center justify-center rounded-full bg-secondary px-6 py-2;
+	}
+	&__three {
+		@apply flex items-center justify-center rounded-full bg-purple px-6 py-2;
+	}
+	&__article {
+		@apply flex items-center justify-center rounded-full bg-secondary px-6 py-2;
+	}
 }
 
 .category-one {
 }
 .bage-i {
-  @apply flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-secondary to-primary text-white;
-  & svg {
-  }
+	@apply flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-secondary to-primary text-white;
+	& svg {
+	}
 }
 .path {
-  @apply text-dark;
+	@apply text-dark;
+}
+
+.input {
+  @apply w-full rounded-md border border-third bg-transparent py-3 pl-3;
 }

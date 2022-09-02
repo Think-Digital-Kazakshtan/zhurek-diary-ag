@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<section class="personalArea-main">
+      <button class="mb-10" @click.prevent="$auth.logout()">Выйти {{$auth.user.email}}</button>
 			<div class="personalArea-wrapper">
 				<NuxtLink to="/profile" class="personalArea-item">
 					<div class="personalArea-item-content">
